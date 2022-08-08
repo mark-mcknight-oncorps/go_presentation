@@ -1,6 +1,6 @@
-= Simple Pub/Sub example in Go =
+# Simple Pub/Sub example in Go
 
-== Description ==
+## Description
 
 This creates a series of servers that subscribe to topics and on
 receiving a message to their channel they append text to the
