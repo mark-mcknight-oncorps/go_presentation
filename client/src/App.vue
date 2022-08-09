@@ -15,23 +15,30 @@
 </script>
 
 <template>
-  <div class="row" v-for="y in 20">
-    <div class="square" v-for="x in 20" :id="x + ',' + y"></div>
-  </div>
-  <div>
-    <button @click="start">Start</button>
+  <div class="main">
+    <div class="grid">
+      <div class="row" v-for="y in 20">
+        <div class="square" v-for="x in 20" :id="x + ',' + y"></div>
+      </div>
+      <div>
+        <button @click="start">Start</button>
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.row {
-  display: block;
+.main {
+  width: 100%;
+}
+.grid {
+  margin: 0 auto;
 }
 .square {
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin: 5px;
+  margin: 3px;
   border: 1px solid black;
   background: white;
 }
